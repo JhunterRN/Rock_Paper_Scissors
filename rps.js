@@ -1,7 +1,25 @@
 "use strict";
+// Choose a random value between integers 1 - 3. (Computer's Choice)
+//     >If the value is one choose 'rock'
+//     >If the value is two choose 'paper'
+//     >If the value is three choose 'scissors'
+// Assign returned value to a variable (Computer Choice)
 
-// When the user inputs "rock", "paper", or "scissors": (Human player's Choice)
-//     >Create function that accepts said input string including only "rock", "Paper", or "scissors" are case insensitive as values.
-//     >Assign resulted value to a variable (Human Choice)
+let randomNumber = Math.floor(Math.random() * 3) +1;
 
-let getHumanChoice = document.getElementsByClassName("")
+console.log(randomNumber)
+
+function getComputerChoice() {
+    const choice = randomNumber;
+    if (choice === 1) {
+        return "rock";
+    } else if (choice === 2) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+}
+
+let computerChoice = getComputerChoice();
+
+console.log(computerChoice);
