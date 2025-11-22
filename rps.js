@@ -47,25 +47,16 @@ let humanChoice = getHumanChoice(); // Assigning the previous function to a vari
 
 console.log(humanChoice);
 
-// Create a scoring system that incrementally increases based upon who wins a game that you will program later:
-//     >Create score variables for comupter and human and initialize at 0
-//         -If Computer wins increment score +1
-//         -If Human wins increment score +1
-//         -If Human increment reaches 5, display "You have Won the Game"
-//         -If Computer increment reaches 5, display "You have Lost the Game"
-//         -else if call another round of RPS (call the initial input again)
+// Create score variables for comupter and human and initialize at 0
 
-let humanScore = 0
-let computerScore = 0
+let humanScore = 0;
+let computerScore = 0;
 
-    // >Create function that accepts the human, and computer choices as parameters (Probably a switch statement?)
-    //     -If the two parameters are equivalent, then display message "Draw" and do not increment either score variable. 
-    //     -Else if: Human chooses rock and Computer chooses scissors increment human +1
-    //     -Else if: Human chooses rock and Computer chooses paper increment computer +1
-    //     -Else if: Human chooses paper and Computer choses rock increment human +1
-    //     -Else if: Human chooses paper and Computer chooses rock then increment computer +1
-    //     -Else if: Human chooses scissors and Computer chooses paper then increment human +1
-    //     -Else if: Human chooses scissors and Computer chooses rock then increment computer +1
+// Create logic to play a round of rock, paper, scissors utilizing variables:
+//     >Create function that accepts the human, and computer choices as parameters (Probably a switch statement?)
+//         -If the two parameters are equivalent, then display message "Draw" and do not increment either score variable.
+//         -Create series of "if else" statments that determine which variable wins
+//         -Choose which variables result in win, or loss.
 
 
 function playRound(humanChoice, computerChoice) {
@@ -75,14 +66,14 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
         return alert("Draw");
     } if (humanChoice === rock && computerChoice === scissors) {
-        alert("Rock crushes scissors, you win!"); 
+        alert("Rock crushes scissors, you win!");
         return 1;
     } else if (humanChoice === scissors && computerChoice === paper) {
         alert ("Scissors slices paper, you win!");
         return 1;
     } else if (humanChoice === paper && computerChoice === rock) {
         alert ("Paper covers rock, you win!");
-        return 1; 
+        return 1;
     } else if (humanChoice === rock && computerChoice === paper) {
         alert ("Paper covers rock, you lose.");
         return 0;
@@ -96,5 +87,10 @@ function playRound(humanChoice, computerChoice) {
         return null;
     }
 }
+console.log(playRound(humanChoice, computerChoice)); // function results in 1 for win, 0 for loss (any incorrect entry results in paper as the choice.)
 
-console.log(playRound(humanChoice, computerChoice));
+let roundEndScore = playRound(humanChoice, computerChoice);
+// Create logic function for keeping score
+//     >Incrimentally increase score for each Player and Computer
+//         -utilize existing variables for human and computer score listed above
+//         -utilize function for playing a round to trigger score keeping function.

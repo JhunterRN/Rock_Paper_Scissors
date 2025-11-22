@@ -8,10 +8,7 @@ When the user inputs "rock", "paper", or "scissors": (Human player's Choice)
     >Create function that accepts said input string including only "rock", "Paper", or "scissors" are case insensitive as values. 
     >Assign resulted value to a variable (Human Choice)
 
-Create a scoring system that incrementally increases based upon who wins a game that you will program later:
-    >Create score variables for comupter and human and initialize at 0
-        -If Computer wins increment score +1
-        -If Human wins increment score +1
+Create score variables for comupter and human and initialize at 0
 
 Create logic to play a round of rock, paper, scissors utilizing variables: 
     >Create function that accepts the human, and computer choices as parameters (Probably a switch statement?)
@@ -19,9 +16,13 @@ Create logic to play a round of rock, paper, scissors utilizing variables:
         -Create series of "if else" statments that determine which variable wins
         -Choose which variables result in win, or loss. 
 
+Create logic function for keeping score
+    >Incrimentally increase score for each Player and Computer
+        -utilize existing variables for human and computer score listed above
+        -utilize function for playing a round to trigger score keeping function
 
 Create logic to play a Game of 5 rounds, as listed above. 
-    >Create function that accepts values 
-
+    >Create function that either ends the game (after either computer or human wins 5 rounds) or starts another round.
+        -utilize existing variables for human score or computer score to determine if another round runs. 
 
 
