@@ -14,7 +14,7 @@ Create logic to play a round of rock, paper, scissors utilizing variables:
     >Create function that accepts the human, and computer choices as parameters (Probably a switch statement?)
         -If the two parameters are equivalent, then display message "Draw" and do not increment either score variable. 
         -Create series of "if else" statments that determine which variable wins
-        -Choose which variables result in win, or loss. 
+        -Run increment function to increase either computer score or human score variables. 
 
 Create logic function for keeping score
     >Incrimentally increase score for each Player and Computer
