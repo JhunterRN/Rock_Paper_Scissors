@@ -8,8 +8,8 @@ function playGame() {
     let roundCount = 0;
     let humanChoice = getHumanChoice(); 
     let computerChoice = getComputerChoice();
-    console.log(humanChoice.toString());
-    console.log(computerChoice.toString());
+    console.log("Human Choice: ", humanChoice.toString());
+    console.log("Computer Choice: ",computerChoice.toString());
     if (roundCount < 5) {
         playRound(humanChoice, computerChoice);
     } else {
@@ -80,8 +80,8 @@ function playGame() {
         function increaseHumanScore() {
             let humanChoice = getHumanChoice(); 
             let computerChoice = getComputerChoice(); 
-            console.log(humanChoice.toString());
-            console.log(computerChoice.toString());
+            console.log("Human Choice: ", humanChoice.toString());
+            console.log("Computer Choice: ",computerChoice.toString());
             humanScore ++;
             roundCount ++;
             if (roundCount < 5) {
@@ -93,8 +93,8 @@ function playGame() {
         function increaseComputerScore() {
             let humanChoice = getHumanChoice(); 
             let computerChoice = getComputerChoice();
-            console.log(humanChoice.toString());
-            console.log(computerChoice.toString());
+            console.log("Human Choice: ", humanChoice.toString());
+            console.log("Computer Choice: ",computerChoice.toString());
             computerScore ++;
             roundCount ++;
             if (roundCount < 5) {
@@ -106,8 +106,8 @@ function playGame() {
         function draw() {
             let humanChoice = getHumanChoice(); 
             let computerChoice = getComputerChoice(); 
-            console.log(humanChoice.toString());
-            console.log(computerChoice.toString());
+            console.log("Human Choice: ", humanChoice.toString());
+            console.log("Computer Choice: ",computerChoice.toString());
             roundCount ++;
             if (roundCount < 5) {
                 playRound(humanChoice, computerChoice);
