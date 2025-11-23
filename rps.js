@@ -82,10 +82,6 @@ function playGame() {
             humanScore++;
             roundCount++;
             console.log("Human Score:", humanScore, "Computer Score:", computerScore);
-            // let humanChoice = getHumanChoice(); 
-            // let computerChoice = getComputerChoice(); 
-            // console.log("Human Choice: ", humanChoice.toString());
-            // console.log("Computer Choice: ",computerChoice.toString());
             if (roundCount < 5) {
                 let humanChoice = getHumanChoice(); 
                 let computerChoice = getComputerChoice(); 
@@ -100,10 +96,6 @@ function playGame() {
             computerScore++;
             roundCount++;
             console.log("Human Score:", humanScore, "Computer Score:", computerScore);
-            // let humanChoice = getHumanChoice(); 
-            // let computerChoice = getComputerChoice();
-            // console.log("Human Choice: ", humanChoice.toString());
-            // console.log("Computer Choice: ",computerChoice.toString());
             if (roundCount < 5) {
                 let humanChoice = getHumanChoice(); 
                 let computerChoice = getComputerChoice();
@@ -117,10 +109,6 @@ function playGame() {
         function draw() {
             roundCount++;
             console.log("Human Score:", humanScore, "Computer Score:", computerScore);
-            // let humanChoice = getHumanChoice(); 
-            // let computerChoice = getComputerChoice(); 
-            // console.log("Human Choice: ", humanChoice.toString());
-            // console.log("Computer Choice: ",computerChoice.toString());
             if (roundCount < 5) {
                 let humanChoice = getHumanChoice(); 
                 let computerChoice = getComputerChoice(); 
