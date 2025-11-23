@@ -24,5 +24,6 @@ Create logic function for keeping score
 Create logic to play a Game of 5 rounds, as listed above. 
     >Create function that either ends the game (after either computer or human wins 5 rounds) or starts another round.
         -utilize existing variables for human score or computer score to determine if another round runs. 
+        -wrap the functions for playing a single round, and the variables for each score type within this function.
 
 
